@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Džanis Brkan — Frontend Developer</title>
+  <meta name="description" content="Džanis Brkan — frontend developer in Mostar building web applications and interactive hall plans with React and Angular.">
+  <meta name="theme-color" content="#FFFFFF">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="progress" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="#top" class="nav__logo" aria-label="Back to top">DB<span>.</span></a>
+      <nav aria-label="Main">
+        <button class="nav__toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+        <ul id="nav-links" class="nav__links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#design">Design</a></li>
+          <li><a href="#contact" class="nav__cta magnetic">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero with interactive hall plan -->
+    <section id="top" class="hero" data-tone="1">
+      <canvas class="hero__plan" aria-hidden="true"></canvas>
+      <div class="hero__fade" aria-hidden="true"></div>
+      <div class="container hero__content">
+        <p class="eyebrow reveal">Software Developer · Frontend · Mostar</p>
+        <h1 class="reveal">
+          Hi, I'm Džanis.<br>
+          I build
+          <span class="typer" aria-hidden="true"><span class="typer__text"></span><span class="typer__caret"></span></span>
+          <span class="sr-only">React apps, interactive hall plans, Angular apps and clean designs.</span>
+        </h1>
+        <p class="lead reveal">Frontend developer from Mostar with six years of experience in React and Angular. These days I build event-platform features at Corussoft, like the interactive hall plan behind this text. Try moving your cursor over it.</p>
+        <div class="hero__actions reveal">
+          <a class="btn btn--primary magnetic" href="#contact">Get in touch</a>
+          <a class="btn btn--ghost magnetic" href="#experience">See my work</a>
+        </div>
+      </div>
+      <a href="#stats" class="scroll-cue" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- Stats -->
+    <section id="stats" class="stats" data-tone="1">
+      <div class="container stats__grid">
+        <div class="stat reveal"><span class="stat__num"><span data-count="6">0</span>+</span><span class="stat__label">Years building for the web</span></div>
+        <div class="stat reveal"><span class="stat__num"><span data-count="4">0</span></span><span class="stat__label">Companies shipped with</span></div>
+        <div class="stat reveal"><span class="stat__num"><span data-count="15">0</span></span><span class="stat__label">Technologies in my toolkit</span></div>
+        <div class="stat reveal"><span class="stat__num"><span data-count="11">0</span>+</span><span class="stat__label">Years of design work</span></div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section" data-tone="2">
+      <div class="container two-col">
+        <h2 class="section__title reveal">About</h2>
+        <div class="about reveal">
+          <div class="about__text">
+            <p>I'm a frontend developer focused on building and maintaining production web applications. I've worked mostly in <strong>React</strong> and <strong>Angular</strong>, and I'm comfortable across the stack with <strong>.NET (Core)</strong> and <strong>MSSQL</strong>.</p>
+            <p>Before writing code full time I designed logos, flyers and business cards, and I still bring that designer's eye to every interface I build. I'm analytical, communicate clearly, and pick up new technologies quickly, whether I'm working on my own or within a team.</p>
+            <dl class="facts">
+              <div><dt>Based in</dt><dd>Mostar, Bosnia and Herzegovina</dd></div>
+              <div><dt>Currently</dt><dd>Frontend Developer at Corussoft</dd></div>
+              <div><dt>Education</dt><dd>BSc Computer Science, FIT Mostar</dd></div>
+            </dl>
+          </div>
+          <div class="about__photo">
+            <div class="ring" aria-hidden="true"></div>
+            <img src="assets/photo.jpg" alt="Portrait of Džanis Brkan" width="300" height="300">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section section--alt" data-tone="3">
+      <div class="container two-col">
+        <h2 class="section__title reveal">Experience</h2>
+        <ol class="timeline">
+          <li class="timeline__progress" aria-hidden="true"></li>
+          <li class="job">
+            <div class="job__card tilt">
+              <div class="job__head">
+                <h3>Frontend Developer <span class="at">@ Corussoft</span></h3>
+                <span class="job__date">Aug 2023 – Present</span>
+              </div>
+              <ul>
+                <li>Develop and maintain web applications in React for Corussoft's event platform.</li>
+                <li>Build and extend interactive hall plans that help visitors and organisers navigate exhibition spaces and stands.</li>
+                <li>Work with AWS services for hosting, deployment and application infrastructure.</li>
+              </ul>
+              <ul class="tags"><li>React</li><li>AWS</li><li>Hall plans</li></ul>
+            </div>
+          </li>
+          <li class="job">
+            <div class="job__card tilt">
+              <div class="job__head">
+                <h3>Angular Developer <span class="at">@ HTEC Group</span></h3>
+                <span class="job__date">2023</span>
+              </div>
+              <ul>
+                <li>Developed and maintained a client web application in Angular.</li>
+              </ul>
+              <ul class="tags"><li>Angular</li><li>TypeScript</li></ul>
+            </div>
+          </li>
+          <li class="job">
+            <div class="job__card tilt">
+              <div class="job__head">
+                <h3>Angular Developer <span class="at">@ Mistral Solutions</span></h3>
+                <span class="job__date">2021 – 2023</span>
+              </div>
+              <ul>
+                <li>Developed and maintained a large web application in Angular.</li>
+                <li>Led parts of the migration from AngularJS to Angular 2+.</li>
+                <li>Wrote unit tests to keep features stable through ongoing development.</li>
+                <li>Built and tested responsive HTML email templates.</li>
+              </ul>
+              <ul class="tags"><li>Angular</li><li>AngularJS</li><li>Unit testing</li></ul>
+            </div>
+          </li>
+          <li class="job">
+            <div class="job__card tilt">
+              <div class="job__head">
+                <h3>React Developer <span class="at">@ Neonada</span></h3>
+                <span class="job__date">2020 – 2021</span>
+              </div>
+              <ul>
+                <li>Designed, developed and maintained single-page applications in React.</li>
+                <li>Created wireframes and page designs in Figma before implementation.</li>
+              </ul>
+              <ul class="tags"><li>React</li><li>Figma</li></ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section" data-tone="2">
+      <div class="container two-col">
+        <h2 class="section__title reveal">Skills</h2>
+        <div class="skills">
+          <div class="skill-card tilt reveal">
+            <h3>Frontend</h3>
+            <ul class="tags"><li>React</li><li>Angular</li><li>TypeScript</li><li>JavaScript</li><li>HTML</li><li>CSS</li></ul>
+          </div>
+          <div class="skill-card tilt reveal">
+            <h3>Backend &amp; data</h3>
+            <ul class="tags"><li>C# / .NET Core</li><li>MSSQL</li></ul>
+          </div>
+          <div class="skill-card tilt reveal">
+            <h3>Cloud &amp; tooling</h3>
+            <ul class="tags"><li>AWS</li><li>Azure</li><li>Azure DevOps</li><li>Docker</li><li>Git</li></ul>
+          </div>
+          <div class="skill-card tilt reveal">
+            <h3>Design</h3>
+            <ul class="tags"><li>Figma</li><li>Adobe XD</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Design -->
+    <section id="design" class="section section--alt" data-tone="4">
+      <div class="container two-col">
+        <h2 class="section__title reveal">Design</h2>
+        <div class="reveal">
+          <p>Since 2015 I've worked as a freelance graphic designer, creating logos, flyers and business cards on commission for clients, colleagues and friends.</p>
+          <a class="btn btn--ghost magnetic" href="https://www.artstation.com/clearthesky" target="_blank" rel="noopener">View my ArtStation →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact" data-tone="1">
+      <div class="contact__glow" aria-hidden="true"></div>
+      <div class="container reveal">
+        <p class="eyebrow">Contact</p>
+        <h2 class="contact__title">Let's build something together.</h2>
+        <p class="lead">Open to new projects and conversations. The quickest way to reach me is email.</p>
+        <a class="contact__email" href="mailto:dzanis1996live@gmail.com">dzanis1996live@gmail.com</a>
+        <ul class="socials">
+          <li><a href="tel:+38761843304">+387 61 843 304</a></li>
+          <li><a href="https://github.com/DzanisBrkan" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/džanis-brkan-162b18176" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://www.artstation.com/clearthesky" target="_blank" rel="noopener">ArtStation</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span id="year"></span> Džanis Brkan</span>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
