@@ -58,18 +58,18 @@ python3 -m http.server 8000
 
 ---
 
+
 ## Deploy
 
-**Netlify (drag and drop):** go to <https://app.netlify.com/drop> and drop the `v5` folder.
+The site is hosted on *GitHub Pages*, deployed straight from the main branch of this repository (Settings → Pages → Deploy from a branch → main / root).
 
-**Netlify CLI:**
+There is no build step: every push to main updates the live site automatically within a minute or two.
 
-```bash
-npm i -g netlify-cli
-netlify deploy --dir . --prod
-```
+git add .
+git commit -m "Update portfolio"
+git push
 
-Any static host works: GitHub Pages, Vercel, Cloudflare Pages or AWS S3 + CloudFront.
+Live at: <https://dzanisbrkan.github.io>
 
 ---
 
